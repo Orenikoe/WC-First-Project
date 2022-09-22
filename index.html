@@ -3,22 +3,25 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Bootstrap demo</title>
+		<title>TalTech</title>
+		<script src="script.js" async></script>
 	</head>
-	<body>
+	<body onscroll="hoverNavItems()">
 		<link
-			rel="stylesheet"
-			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 		/>
 		<link rel="stylesheet" href="./style.css" />
+		
+
 
 		<header>
 			<img src="./assets/company-logo.png" alt="company logo" />
 			<nav>
 				<ul>
-					<li>Team</li>
-					<li>Experience</li>
-					<li>Contact</li>
+					<a href="#team-con"><li class="'hover" id="nav-team">Team</li></a>
+					<a href="#exp-con"><li class="'hover" id="nav-experience">Experience</li></a>
+					<a href="#contact-section"><li class="'hover" id="nav-contact" >Contact</li></a>
 				</ul>
 			</nav>
 		</header>
@@ -40,22 +43,22 @@
 			<div class="carousel-inner" role="listbox">
 				<div id="#my-carousel" class="item active">
 					<img
-						class="img-fluid d-block w-100"
-						alt="First slide"
-						src="./assets/Carousle-Pic11.png"
+					class="img-fluid d-block w-100"
+					alt="First slide"
+					src="./assets/Carousle-Pic11.png"
 					/>
 					<div class="carousel-caption">
 						<h3></h3>
 						<p></p>
 					</div>
 				</div>
-
+				
 				<div id="#my-carousel" class="item">
 					<img
 						class="img-fluid d-block w-100"
 						alt="Second slide"
 						src="./assets/Carousle-pic22.png"
-					/>
+						/>
 					<div class="carousel-caption">
 						<h3></h3>
 						<p></p>
@@ -67,8 +70,8 @@
 						class="img-fluid d-block w-100"
 						alt="Third slide"
 						src="./assets/carousle-33.jpg"
-					/>
-					<div class="carousel-caption">
+						/>
+						<div class="carousel-caption">
 						<h3>We hear what you say!</h3>
 						<p>
 							Together we will find the best solution for you, tailored to your
@@ -84,10 +87,10 @@
 				href="#my-carousel"
 				role="button"
 				data-slide="prev"
-			>
+				>
 				<span
-					class="glyphicon glyphicon-chevron-left"
-					aria-hidden="true"
+				class="glyphicon glyphicon-chevron-left"
+				aria-hidden="true"
 				></span>
 				<span class="sr-only">Previous</span>
 			</a>
@@ -98,13 +101,13 @@
 				data-slide="next"
 			>
 				<span
-					class="glyphicon glyphicon-chevron-right"
+				class="glyphicon glyphicon-chevron-right"
 					aria-hidden="true"
-				></span>
-				<span class="sr-only">Next</span>
-			</a>
+					></span>
+					<span class="sr-only">Next</span>
+				</a>
 		</div>
-
+		
 		<main>
 			<div class="main-img-wrapper-left">
 				<img class="main-img" src="./assets/main-pic3.png" />
@@ -115,12 +118,12 @@
 			<div class="main-img-wrapper-left">
 				<img class="main-img" src="./assets/main-pic7.png" />
 			</div>
-
+			
 			<!-- Explaining what we do with simple words (the process, describe how it happens) -->
 			<div class="main-text">
 				<p>
 					If you are wondering wether you need us or us --> just make a
-					<a>contact</a> and let's have a talk and see if we can help you or
+					<a href="#contact-section">contact</a> and let's have a talk and see if we can help you or
 					not.
 				</p>
 				<p>We love what we do and passionate about helping businesses grow!</p>
@@ -132,13 +135,16 @@
 				</p>
 			</div>
 			<!-- The Team -->
-			<div class="team-container">
+			<div class="team-container" id="team-con">
 				<div class="team-member-card">
 					<img src="./assets/avidan-pic-best.png" class="team-member-img" />
 					<div class="team-member-intro">
 						<h3 class="team-member-name">Avidan Tal</h3>
 						<h5 class="team-member-title">IT Consultant</h5>
-						<p class="team-member-text">Avidan is our Top guy</p>
+						<p class="team-member-text">Avidan is our Top guy, with 10 years of experience in the industry. B.sc in Industrial Engineering and Management.
+							CTO of V.gold - industrial factory with an annual T/O of $25M during the last 5 years, Former lecturer for application development at Rupin academy college.
+							passionate about problem solving, DevOps and working environments. He can spot a problem quicker than a football VAR!
+						</p>
 					</div>
 				</div>
 				<div class="team-member-card">
@@ -147,18 +153,24 @@
 						<h3 class="team-member-name">Itamar Tal</h3>
 						<h5 class="team-member-title">Full-stack Developer</h5>
 						<p class="team-member-text">
-							Itamar is our well experienced frontend
+							Itamar is our well experienced software developer, doing mostly front-end, an angular expert.
+							Specialized in large complicated applications. His can-do attitude allowing him to supply solutions quickly without wasting time.
+							Among his jobs: Software developer at Visa, Click, CodeOasis, e-square and currently working for Hi-Bob, a fast growing Israeli unicorn
+							with offices in London, Berlin, New York, Amsterdam and Lisbon
 						</p>
 					</div>
 				</div>
 				<div class="team-member-card">
-					<img src="./assets/ariel-pic11.jpg" class="team-member-img" />
+					<img src="./assets/ariel-pic1.jpg" class="team-member-img" />
 					<div class="team-member-intro">
 						<h3 class="team-member-name">Ariel Tal</h3>
 						<h5 class="team-member-title">Senior Consultant</h5>
 						<p class="team-member-text">
 							Ariel is our fantastic planner and stategist with over 35 years of
-							experience
+							experience managing organizations and communities with an annual budgets ranging from $1M - $15M.
+							B.sc in Industrial Engineering and Management
+							Among his jobs: marketing manager and purchasing manager of Mesilot Wire-ropes Ltd. , Mesilot Production FCO,
+							FCO at Heftziba, Started as a software developer at Granot Ltd.
 						</p>
 					</div>
 				</div>
@@ -167,7 +179,12 @@
 					<div class="team-member-intro">
 						<h3 class="team-member-name">Zimra Tal</h3>
 						<h5 class="team-member-title">Accountant & Administration</h5>
-						<p class="team-member-text">Zimra</p>
+						<p class="team-member-text">Zimra has 30 years of experience managing account, holding an accountant level 4 certificate.
+							Dealing with high volume transactions and payment - Zimra adopted strict approval work-flow method combined with robust documentation
+							skill. She is not missing a number!
+							Among her past experience: Mesilot Senior Accountant, Senior accountant at Dagat Haaretz Ltd. (d-h), Factory for fish packing and marketing
+							with annual T/O of $40M during the last 3 years.
+						</p>
 					</div>
 				</div>
 				<div class="team-member-card">
@@ -175,13 +192,40 @@
 					<div class="team-member-intro">
 						<h3 class="team-member-name">Oren Tal</h3>
 						<h5 class="team-member-title">Full-stack Developer</h5>
-						<p class="team-member-text">oren</p>
+						<p class="team-member-text">The youngest member in the team! Oren is a software developer, though his experience is in the industrial section.
+							before taking this career turn, Oren worked for 2 years as a senior purchasing officer at MY Construction - a Large size company based in London with annual
+							T/O of over $100M during the last 3 years. He was required to build new trading relationships with world-known suppliers and negotiating supply contracts.
+							out of passin for software, he helped to build a basic purchasing system for a branch of the company.
+						</p>
 					</div>
 				</div>
 			</div>
+
+			<section>
+				<div class="experience-container" id="exp-con">
+					<div>Some Experience will be added later</div>
+				</div>
+			</section>
+
+			<section id="contact-section" class="contact-container">
+<div>
+	<input class="contact-field" placeholder='name'type="text">
+	<input class="contact-field" placeholder="telephone number"  type="text">
+	<input class="contact-field" placeholder="email"  type="text">
+	<button onclick="sendForm()">Send!</button>
+</div>
+<p>You can reach us on +972546754249 or <a href="mailto:taltech@consultant.com">taltech@consultant.com</a></p>
+			</section>
+
+			<footer>
+				<div>
+					<h6>This Website runs by Tal Tech ©</h6>
+				</div>
+			</footer>
 		</main>
 
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
 	</body>
 </html>
